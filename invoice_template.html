@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0b4c5e;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+        }
+
+        .invoice-box {
+            background-color: #fff;
+            max-width: 600px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 6px;
+            box-sizing: border-box;
+            min-height: 1220px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #0b4c5e;
+            margin-bottom: 30px;
+        }
+        h2{
+            color: #0b4c5e;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 8px 0;
+        }
+
+        .item-row td:first-child {
+            text-align: left;
+        }
+
+        .item-row td:last-child {
+            text-align: right;
+        }
+
+        .total {
+            margin-top: 20px;
+            font-weight: bold;
+            text-align: right;
+            color: #0b4c5e;
+        }
+
+        .footer {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        color: #888;
+    }
+    </style>
+</head>
+<body>
+    <div class="invoice-box">
+        <h1>Invoice for {{name}}</h1>
+        <h2>requests:</h2>
+        <table>
+            {% for request in requests.index %}
+            <tr class="item-row">
+                <td>{{request}}</td>
+                <td>{{requests[request]}} LE</td>
+            </tr>
+            {% endfor %}
+        </table>
+        <p class="total">Total: {{total_price}} LE</p>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer class="footer">
+        Thank you for choosing our services.
+    </footer>
+    </div>
+
+</body>
+</html>
