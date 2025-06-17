@@ -71,7 +71,7 @@ def submit():
     env = Environment(loader=FileSystemLoader('.'))
     template = env.get_template("invoice_template.html")
     html = template.render(request_in)
-    pdfkit.from_string(html, path = fr"invoices\invoice_{name.replace(' ', '_')}_{date}.pdf"
+    pdfkit.from_string(html, path = fr"invoice_{name.replace(' ', '_')}_{date}.pdf"
                        ,configuration=config)
     #reset the entries
     request = []
