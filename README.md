@@ -14,3 +14,8 @@ This is a Python-based project that generates professional invoices for graphic 
 ## 🧾 Use Case
 Ideal for freelance graphic designers who want a quick and automated way to generate and save invoices for their clients.
 
+## 📸 Preview
+- GUI:
+- ![GUI](https://github.com/user-attachments/assets/a82013d2-1a21-42e8-ab99-e5b7621f2140)
+- Output example:
+- ![o](https://github.com/user-attachments/assets/1f068df6-3c2b-45fa-9a96-b1df1a767bdd)
